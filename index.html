@@ -238,6 +238,24 @@ html:not(.js) .book-real-cover,html:not(.js) .about-image>img{opacity:1}
 @media(max-width:600px){.hero-bottom:after{content:none}}
 @media(min-width:601px){.hero-bottom a{margin-right:calc(30% + 48px)}} /* keeps the scroll link's arrow off the photograph at tablet widths */
 @media(max-width:600px){.hero-photo:after{background:linear-gradient(90deg,rgba(25,46,39,.16),transparent 40%),linear-gradient(0deg,rgba(11,29,25,.9) 0,rgba(11,29,25,.82) 20%,rgba(11,29,25,.4) 34%,transparent 48%)}} /* mobile: white hero-bottom text reaches 4.5:1 over the photo */
+/* V9: Spirit of Adventure, an editorial reading band in Frosty's own words. */
+.spirit{background:#17261f;color:#f4efe2}
+.spirit-inner{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(48px,6vw,110px);align-items:start;padding-block:128px 120px}
+.spirit-head{position:sticky;top:122px}
+.spirit-label{color:#efb68d}
+.spirit h2{font:900 clamp(72px,7.2vw,116px)/.82 var(--display);letter-spacing:-1px;text-transform:uppercase;margin:31px 0 0}
+.spirit h2 em{display:block;font:italic 600 .78em/1 var(--serif);letter-spacing:-2px;text-transform:none;color:#f5a977;margin-top:.08em}
+.spirit-rule{display:block;width:56px;height:2px;background:#db4e2a;margin:38px 0 0}
+.spirit-text{margin:0;max-width:620px}
+.spirit-text blockquote{margin:0}
+.spirit-text p{margin:0 0 1.45em;font-size:19px;line-height:1.85;color:#e7e1d1;text-wrap:pretty}
+.spirit-text .spirit-lead{font:500 clamp(23px,1.85vw,28px)/1.6 var(--serif);color:#fbf7ec;margin-bottom:1.5em}
+.spirit-nowrap{white-space:nowrap}
+.spirit-turn{padding-top:1.45em;border-top:1px solid rgba(244,239,226,.2)}
+.spirit-finale{display:block;margin-top:.55em;font:italic 600 clamp(30px,2.6vw,40px)/1.15 var(--serif);color:#f5a977;letter-spacing:-.5px}
+.spirit-text figcaption{margin-top:2.6em;font-size:12px;font-weight:800;letter-spacing:2.8px;text-transform:uppercase;color:#efb68d}
+@media(max-width:1050px){.spirit-inner{grid-template-columns:1fr;gap:56px;padding-block:96px 92px}.spirit-head{position:static}.spirit-text{max-width:620px}}
+@media(max-width:600px){.spirit-inner{gap:40px;padding-block:72px 68px}.spirit h2{font-size:clamp(44px,14vw,62px);margin-top:24px}.spirit-rule{margin-top:28px}.spirit-text p{font-size:17px;line-height:1.8}.spirit-text .spirit-lead{font-size:21px;line-height:1.6}.spirit-finale{font-size:29px}.spirit-text figcaption{font-size:10px;letter-spacing:2.2px}}
 </style><script>document.addEventListener("DOMContentLoaded",function(){(()=>{
  const button=document.querySelector('.menu-toggle'),nav=document.getElementById('primary-nav');
  if(button&&nav){button.addEventListener('click',()=>{const open=button.getAttribute('aria-expanded')!=='true';button.setAttribute('aria-expanded',String(open));button.setAttribute('aria-label',open?'Close menu':'Open menu');nav.classList.toggle('open',open);});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{button.setAttribute('aria-expanded','false');button.setAttribute('aria-label','Open menu');nav.classList.remove('open');}));}
@@ -361,6 +379,15 @@ document.addEventListener('DOMContentLoaded',function(){[].forEach.call(document
  <article class="story-card story-two"><div class="story-vignette"><span>02</span><small>THE ABSURD</small></div><div class="story-card-body"><span class="story-no">ON THE ROAD / 02</span><h3>Arrested for having “too much fun.”</h3><p>One of the offbeat moments behind the humor in Frosty's travel writing.</p></div></article>
  <article class="story-card story-three"><div class="story-vignette"><span>03</span><small>THE WILD</small></div><div class="story-card-body"><span class="story-no">ON THE ROAD / 03</span><h3>Face-to-face with an Alaskan grizzly.</h3><p>The kind of wilderness encounter that stays with a traveler long after the ride is over.</p></div></article>
  </div></section>
+<section class="spirit" id="spirit" aria-labelledby="spirit-heading"><div class="contain spirit-inner">
+ <div class="spirit-head"><p class="eyebrow spirit-label">IN FROSTY’S OWN WORDS</p><h2 id="spirit-heading">Spirit of <em>Adventure</em></h2><span class="spirit-rule" aria-hidden="true"></span></div>
+ <figure class="spirit-text"><blockquote>
+  <p class="spirit-lead">If the roar of a wave crashes beyond your campsite, you might call that adventure. When coyotes howl outside your tent—that may be adventure. While you’re sweating like a horse in a climb over a <span class="spirit-nowrap">12,000-foot</span> pass, that’s adventure. When a howling headwind presses your lips against your teeth, you’re facing a mighty adventure. If you’re pushing through a howling rainstorm, you’re soaked in adventure.</p>
+  <p class="spirit-turn">But that’s not what makes an adventure. It’s your willingness to struggle through it, to present yourself at the doorstep of Nature. That creates the experience.</p>
+  <p>No greater joy can come from life than to live inside the ‘moment’ of an adventure. It may be a momentary ‘high’, a stranger that changes your life, an animal that delights you or frightens you, a struggle where you triumphed, or even failed, yet you braved the challenge.</p>
+  <p>Those moments present you uncommon experiences that give your life eternal expectation. <em class="spirit-finale">That’s adventure!</em></p>
+ </blockquote><figcaption>— Frosty Wooldridge</figcaption></figure>
+</div></section>
 <section class="bookshelf" id="books" aria-labelledby="books-heading"><div class="contain">
  <div class="bookshelf-top"><p class="eyebrow orange-text">03 — MORE BOOKS</p><h2 id="books-heading">A lifetime<br><em>on the page.</em></h2><p>Beyond the miles: cycling journals, adventure, life stories and essays. Explore 17 published titles across Frosty’s writing.</p></div>
  <div class="catalog-control"><p class="catalog-count" role="status"><strong>17 titles</strong> · One remarkably wide-ranging shelf</p><div class="catalog-filters" role="group" aria-label="Filter books by subject"><button class="catalog-filter active" type="button" data-filter="All books" aria-pressed="true">All 17</button><button class="catalog-filter" type="button" data-filter="Adventure" aria-pressed="false">Adventure</button><button class="catalog-filter" type="button" data-filter="Cycling" aria-pressed="false">Cycling</button><button class="catalog-filter" type="button" data-filter="Life" aria-pressed="false">Life</button><button class="catalog-filter" type="button" data-filter="Fiction" aria-pressed="false">Fiction</button><button class="catalog-filter" type="button" data-filter="Issues" aria-pressed="false">Issues</button></div></div>
