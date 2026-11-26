@@ -1,0 +1,5 @@
+# Frosty Wooldridge — official website: https://liveaspectacularlife.com/
+User-agent: *
+Allow: /
+
+Sitemap: https://liveaspectacularlife.com/sitemap.xml
